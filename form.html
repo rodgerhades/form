@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="description" content="curso web">
+		<meta name="keywords" content="html css">
+		<meta name="author" content="Rodger"> 
+	
+	</head>
+	
+	<body>
+		<h1>Formulário</h1>
+		
+		<fieldset width="20px">
+			<legend>informações pessoais</legend>			
+			
+			<h2>Escolha um curso:<h2>
+			
+			<input name="cursos" list="lista-curso">
+			<datalist id="lista-curso">
+				<option value="cursos" selected></option>
+				<option value="html"></option>
+				<option value="css"></option>
+				<option value="php"></option>
+				<option value="laravel"></option>
+		
+			</datalist>
+		
+			
+		<form action="" method="get">
+			Nome:<br>
+			<input type="text" name="nome" maxlength="10"><br>
+			Senha:<br>
+			<input type="password" name="senha" required placeholder="Digite sua senha"><br>
+			Data:<br>
+			<input type="date" name="data"><br>
+			<input type="time" name="hora"><br>
+			<input type="month" name="mes"><br>
+			<input type="week" name="semana"><br>
+			<input type="datetime-local" name="data e hora"><br>
+			Mensagem:<br>
+			<textarea name="mensagem" rows="5" cols="30" spellcheck="false"></textarea><br>
+			<button type="button">clique-me</button><br>
+			
+			<select name="time">
+				<optgroup label="sp">
+				<option value="" selected>escolha seu time</option>
+				<option value="corinthians">Corinthians</option>
+				<option value="palmeiras">Palmeiras</option>
+				<option value="são paulo">São paulo</option>
+				</optgroup>
+				
+			</select>	
+			
+			<input type="submit" name="botao" value="enviar">
+			
+		</form>	
+		</fieldset>
+	
+	</body>
+	
+</html>
